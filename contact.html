@@ -3,38 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <meta name="description" content="Get in touch with Goodlucky Hara.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230366d6%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>G</text></svg>">
+  <title>Contact — Goodlucky Hara</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">Goodlucky</div>
+    <a href="index.html" class="logo">Goodlucky</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
     </ul>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="navbar-right">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+    </div>
   </nav>
 
   <section>
     <h2>Get in Touch</h2>
-    <form action="mailto:goodluckyhara@gmail.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
+      <br><br>
       <button type="submit">Send</button>
+      <p class="form-note">This opens your email app with the message pre-filled — nothing is sent automatically. Prefer to email directly? Reach me at <a href="mailto:goodluckyhara@gmail.com">goodluckyhara@gmail.com</a>.</p>
     </form>
   </section>
 
   <footer>
-    <p>© 2026 Goodlucky Hara</p>
+    <p>© 2026 Goodlucky Hara | <a href="https://github.com/Clifford-19" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 
   <script src="js/main.js"></script>
