@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #24292e;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #24292e;
+    position: absolute;
+    top: 60px;
+    right: -250px;
+    width: 200px;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Sections */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+button {
+  background: #0366d6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0053a6;
+}
+
+/* Dark mode */
+.dark-mode {
+  background: #121212;
+  color: #f4f4f9;
+}
+
+/* Project cards */
+.project-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s, opacity 0.6s ease-out, transform 0.6s ease-out;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
