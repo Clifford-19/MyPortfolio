@@ -3,35 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goodluck's Portfolio</title>
+  <meta name="description" content="Goodlucky Hara — BS ICT student and developer. Portfolio featuring AsterNovaMart and other projects.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230366d6%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>G</text></svg>">
+  <title>Goodlucky Hara — Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">Goodlucky</div>
+    <a href="index.html" class="logo">Goodlucky</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="navbar-right">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+    </div>
   </nav>
 
-  <header>
-    <h1>Welcome to My Portfolio</h1>
+  <header class="hero">
+    <div class="avatar">GH</div>
+    <h1>Hi, I'm Goodlucky Hara</h1>
+    <p class="tagline">BS ICT Student · Software &amp; Systems Developer</p>
     <p id="greeting"></p>
-    <button onclick="toggleTheme()">Toggle Dark Mode</button>
+    <a href="projects.html" class="btn">View My Projects</a>
+    <div class="social-links">
+      <a href="https://github.com/Clifford-19" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:goodluckyhara@gmail.com">Email</a>
+    </div>
   </header>
 
   <section>
     <h2>Featured Project</h2>
-    <p>AsterNovaMart — scalable e‑commerce store with PayChangu integration.</p>
+    <p>AsterNovaMart — a scalable e-commerce store built with Next.js and Firebase, featuring PayChangu payment integration for card and mobile money checkout.</p>
     <a href="projects.html"><button>View More Projects</button></a>
   </section>
 
   <footer>
-    <p>© 2026 Goodlucky Hara | <a href="https://github.com/YourUsername">GitHub</a></p>
+    <p>© 2026 Goodlucky Hara | <a href="https://github.com/Clifford-19" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 
   <script src="js/main.js"></script>

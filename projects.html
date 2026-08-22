@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <meta name="description" content="Projects by Goodlucky Hara, including AsterNovaMart and the MzuzuSmartWaste Monitor.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230366d6%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>G</text></svg>">
+  <title>Projects — Goodlucky Hara</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">Goodlucky</div>
+    <a href="index.html" class="logo">Goodlucky</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="navbar-right">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+    </div>
   </nav>
 
   <section>
@@ -22,17 +28,34 @@
     <div class="project-grid">
       <div class="project-card">
         <h3>AsterNovaMart</h3>
-        <p>An online store with full e‑commerce functionality and PayChangu integration.</p>
+        <p>A scalable e-commerce store with product catalog, cart, and checkout, featuring PayChangu integration for card and mobile money payments (Airtel Money, TNM Mpamba).</p>
+        <div class="tech-tags">
+          <span>Next.js</span>
+          <span>Firebase</span>
+          <span>PayChangu</span>
+          <span>Supabase</span>
+        </div>
+        <div class="project-links">
+          <a href="https://asternovamart.vercel.app" target="_blank" rel="noopener">Live Site →</a>
+          <a href="https://github.com/Clifford-19/asternovamart" target="_blank" rel="noopener">Source →</a>
+        </div>
       </div>
       <div class="project-card">
         <h3>MzuzuSmartWaste Monitor</h3>
-        <p>Academic project focused on smart waste management solutions.</p>
+        <p>An academic project focused on smart waste management — monitoring bin fill levels and optimizing collection routes for cleaner, more efficient city sanitation.</p>
+        <div class="tech-tags">
+          <span>IoT</span>
+          <span>Systems Design</span>
+        </div>
+        <div class="project-links">
+          <a href="#" rel="noopener">Details →</a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Goodlucky Hara</p>
+    <p>© 2026 Goodlucky Hara | <a href="https://github.com/Clifford-19" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 
   <script src="js/main.js"></script>
