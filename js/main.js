@@ -143,7 +143,7 @@ function addZamoraHighlights() {
   if (hero && !document.querySelector(".zamora-highlight")) {
     const highlight = document.createElement("section");
     highlight.className = "zamora-highlight";
-    highlight.innerHTML = '<h2>Explore Zamora</h2><p>Discover Zamora, one of my featured projects.</p><a class="btn" href="https://zamora.wauze.com" target="_blank" rel="noopener noreferrer">Visit Zamora ↗</a>';
+    highlight.innerHTML = '<h2>Explore Zamora</h2><p>Discover Zamora, one of my featured projects.</p><a class="btn" href="https://zamora.wuaze.com" target="_blank" rel="noopener noreferrer">Visit Zamora ↗</a>';
     hero.insertAdjacentElement("afterend", highlight);
   }
 
@@ -151,7 +151,7 @@ function addZamoraHighlights() {
   if (aboutCard && !aboutCard.querySelector(".zamora-about-link")) {
     const link = document.createElement("p");
     link.className = "zamora-about-link";
-    link.innerHTML = 'Explore my <a href="https://zamora.wauze.com" target="_blank" rel="noopener noreferrer">Zamora project ↗</a>.';
+    link.innerHTML = 'Explore my <a href="https://zamora.wuaze.com" target="_blank" rel="noopener noreferrer">Zamora project ↗</a>.';
     aboutCard.appendChild(link);
   }
 }
